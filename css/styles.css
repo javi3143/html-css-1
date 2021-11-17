@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Varela%20Round");
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Arvo";
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 16px;
+  }
+p {
+  text-align: justify;
+}
+.container {
+  width:1200px;
+  margin: 0em auto;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 10px #A9A9A9;
+}
+
+header {
+    height: 300px;
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-color:#6baa36;
+    background-size: 800px 500px;
+    background-position: 0px -240px;
+    display: flex;                     /* Used to center h1 vertically and horizontally*/
+}
+
+h1 {
+  font-family: "Varela Round";
+  margin: auto;
+  color: #ffffff;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+nav {
+  padding-top: 10px;
+  width:300px;
+  font-size: 1.0em;
+  position: absolute; /* Make sidebar independent rest of the page*/
+}
+
+nav > ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  width: 100%;
+  display: inline-block;
+  margin-left: -15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav li a:link, nav li a:visited {
+  text-decoration: none;
+  color: #808080;
+}
+
+nav li a:hover {
+  color: #ffffff;
+  cursor: none;
+  background-color: #6baa36;
+}
+
+main {
+  position: relative;
+  width:75%;
+  left: 300px;
+  border-left: 0.5px solid rgb(212, 210, 210);
+  padding: 30px 30px 0px 25px;
+}
+
+.intro > h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+.intro {
+  background-color: #6baa361f;
+  color: #6baa36;
+  
+  font-size: 1.7em;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+blockquote {
+  background: #e4e9e2;
+  border-left: 6px solid #466721;
+  font-family: "Varela Round";
+  color: #466721;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px 30px 0px 60px;
+  font-size: 1.2em;
+  position:relative;
+  line-height: 1.6;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 4em;
+  color: #466721;
+  position: absolute;
+  top: -0.1em;
+  left: 0.1em;
+}
+
+blockquote::after {
+  content: attr(data-author);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+figure.index_img {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+figcaption {
+  text-align: center;
+  color: #466721;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+img {
+  width:100%;
+}
+
+a {
+  color: #6baa36;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #466721;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #6baa36;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Varela Round";
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+footer div:nth-child(1) p {
+  text-align: right;
+}
+
+footer div:nth-child(2) p {
+  text-align: left;
+}
+
+footer div:nth-child(2) p:nth-child(2){
+  font-size: 0.6em;
+}
+
+.main-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.sub_footer {
+  padding: 20px 50px 12px 50px;
+  width: 25%;
+  display: table-cell;
+  border-right: solid #e4e9e2 0.5px;
+}
+
+.sub_footer:last-child {
+  border: 0px;
+}
+
+.sub_footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sub_footer a:hover {
+  text-decoration: underline;
+}
+
+main > h2 {
+  margin-top: -20px;
+}
+/* index.html */
+figure.index_img > img {
+  height:100%;
+}
+/* dictionary.html */
+ol.lista_inline{
+  padding-top: 15px;
+}
+
+ol.lista_inline li {
+  display: inline;
+  font-size: 1.7em;
+  color: rgb(177, 174, 174);
+  padding-left: 4px;
+}
+
+ol#list_dict{
+  list-style-type: upper-alpha;
+}
+
+ol#list_dict li {
+  padding-left:2em;
+  font-family: "Arvo";
+  color:black;
+}
+
+ol#list_dict li::marker {
+  color: #6baa36;
+  font-style: italic;
+  font-size: 2em;
+}
+
+dt{
+  background-color: #6baa36;
+  padding: 10px 10px 10px 20px;
+  font-size: 1.5em;
+}
+
+dd {
+  padding: 10px 10px 10px 0px;
+  font-size: 1.1em;
+}
+
+#dict_A {
+  padding-top: 20px;
+}
+.divs_dict{
+  box-shadow: 5px 10px 10px #A9A9A9;
+  border-bottom: 3px solid #6baa36;
+  margin-bottom: 40px;
+}
+
+ol.lista_inline li a:link {
+  text-decoration: none;
+}
+
+div.divs_dict dl dd ul#requirements {
+  padding-left:0;
+}
+
+ol#list_dict li div dl dd ul#requirements li {
+  padding-left: 0;
+}
+
+ol#list_dict li div dl dd ul#requirements li::marker {
+  font-size: initial;
+  color: initial;
+}
+
+ol#list_dict li#dict_C:last-child {
+  margin-bottom: -20px;
+}
+
+/* trends.html */
+
+ul.list_trends {
+  display: inline-flex;
+  list-style: none;
+  width: 100%;
+  margin-top:5px;
+  margin-bottom:10px;
+  padding-left:0em;
+}
+
+ul.list_trends > li {
+  width: 100%;
+  padding: 0px 15px 30px 10px;
+  margin-right: 12px;
+}
+
+ul.list_trends > li:first-child{
+  border-left: 1px solid #6baa36;
+  border-bottom: 1px solid #6baa36;
+}
+
+ul.list_trends > li:nth-child(2){
+  border-left: 1px solid #6baa36;
+  border-bottom: 1px solid #6baa36;
+  border-right: 1px solid #6baa36;
+}
+
+ul.list_trends:last-child > li{
+  border-top: 1px solid #6baa36;
+  border-bottom: none;
+}
+
+ul.list_trends li h3 {
+  font-size: 1.1em;
+}
+
+ul.list_trends li figure img {
+  width: 260px;
+  height: 175px;
+  padding-left: 25px;
+}
+ul.list_trends li figure img.personality_img {
+  height: 260px;
+}
+
+ul.list_trends blockquote {
+  margin-left: 8px;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 1.1em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 0px;
+}
+
+ul.list_trends blockquote::before {
+  font-size: 3em;
+  top: 0em;
+  left: 0.2em;
+}
+
+ul.list_trends blockquote::after {
+  padding-top: 12px;
+}
+
+ul.sublist_trends {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: -30px;
+}
+
+ul.sublist_trends li::before {
+  content: '▶';
+  font-size: 0.7em;
+}
